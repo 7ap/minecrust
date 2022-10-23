@@ -10,3 +10,4 @@ repository = "https://github.com/7ap/minecrust/"
 license = "MIT"
 
 [dependencies]
+env_logger = "0.9.1"
