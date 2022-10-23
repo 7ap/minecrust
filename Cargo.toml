@@ -11,3 +11,4 @@ license = "MIT"
 
 [dependencies]
 env_logger = "0.9.1"
+log = "0.4.17"
