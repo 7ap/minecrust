@@ -1,3 +1,9 @@
+use futures::executor;
+
+use minecrust;
+
 fn main() {
-    println!("Hello, world!");
+    env_logger::init();
+
+    executor::block_on(minecrust::run());
 }
