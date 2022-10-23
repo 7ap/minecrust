@@ -1,6 +1,12 @@
 [package]
 name = "minecrust"
 version = "0.0.0"
+authors = ["7ap"]
 edition = "2021"
+description = "Minecraft: Rust Edition"
+documentation = "https://docs.rs/minecrust"
+readme = "README.md"
+repository = "https://github.com/7ap/minecrust/"
+license = "MIT"
 
 [dependencies]
