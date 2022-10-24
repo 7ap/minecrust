@@ -1,6 +1,6 @@
 # ⛏️ minecrust
 
-_Minecraft: Rust Edition_
+⛏️ Minecraft: Rust Edition
 
 ## 🏗️ Installation
 
