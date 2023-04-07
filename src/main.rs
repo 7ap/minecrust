@@ -1,9 +1,5 @@
-use futures::executor;
-
-use minecrust;
+use bevy::prelude::*;
 
 fn main() {
-    env_logger::init();
-
-    executor::block_on(minecrust::run());
+    App::new().add_plugins(DefaultPlugins).run();
 }

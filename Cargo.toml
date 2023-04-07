@@ -10,8 +10,4 @@ repository = "https://github.com/7ap/minecrust/"
 license = "MIT"
 
 [dependencies]
-env_logger = "0.9.1"
-futures = "0.3.25"
-log = "0.4.17"
-wgpu = "0.14.0"
-winit = "0.27.4"
+bevy = "0.10"
