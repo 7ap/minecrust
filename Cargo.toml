@@ -9,5 +9,12 @@ readme = "README.md"
 repository = "https://github.com/7ap/minecrust/"
 license = "MIT"
 
+[profile.dev]
+opt-level = 0
+
+[profile.dev.package."*"]
+opt-level = 3
+
 [dependencies]
 bevy = "0.10"
+bevy_flycam = "*"
