@@ -1,11 +1,8 @@
-#[macro_use]
-extern crate log;
-
 use anyhow::Result;
+use async_std::task;
 use cfg_if::cfg_if;
 
-#[async_std::main]
-async fn main() -> Result<()> {
+fn main() -> Result<()> {
     cfg_if! {
         if #[cfg(target_arch = "wasm32")] {
             std::panic::set_hook(Box::new(console_error_panic_hook::hook));
@@ -15,7 +12,7 @@ async fn main() -> Result<()> {
         }
     }
 
-    info!("Hello, server!");
+    task::block_on(minecrust::server::run());
 
     Ok(())
 }
