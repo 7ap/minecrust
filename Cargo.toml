@@ -9,12 +9,20 @@ readme = "README.md"
 repository = "https://github.com/7ap/minecrust/"
 license = "MIT"
 
-[profile.dev]
-opt-level = 0
-
-[profile.dev.package."*"]
-opt-level = 3
+[lib]
+crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-bevy = "0.10"
-bevy_flycam = "*"
+anyhow = "1.0"
+async-std = { version = "1", features = ["attributes"] }
+cfg-if = "1.0"
+env_logger = "0.10"
+log = "0.4"
+nalgebra = "0.32"
+wgpu = "0.16"
+winit = "0.28"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+console_error_panic_hook = "0.1"
+console_log = "1.0"
+wgpu = { version = "0.16", features = ["webgl"]}
